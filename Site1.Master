@@ -1,0 +1,88 @@
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <link href="themes/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 235px;
+            margin-bottom: 0px;
+        }
+        .auto-style3 {
+            height: 104px;
+            width: 110px;
+        }
+        .auto-style5 {
+            height: 81px;
+        }
+        .auto-style7 {
+            height: 49px;
+        }
+        .auto-style12 {
+            height: 34px;
+            width: 110px;
+        }
+        .auto-style13 {
+            height: 23px;
+            width: 110px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server" style="background-color: #FF99FF">
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style3" rowspan="2" colspan="2">
+                    <asp:Image ID="Image1" runat="server" Height="87px" Width="111px" ImageUrl="~/images/180af2740affee4dd471423279dc7c2b.png" />
+                </td>
+                <td class="auto-style7"><h1 style="text-align:center">Liberted Central</h1></td>
+            </tr>
+            <tr>
+                <td style="text-align:right">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/About.aspx">About Us</asp:HyperLink>
+                    &nbsp;&nbsp;<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink></nav>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style12">
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/NewAdmission.aspx">New Addmission</asp:HyperLink>
+                </td>
+                <td class="auto-style5" colspan="2" rowspan="3">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style12">
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Update.aspx">Update</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style13">
+                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Delete.aspx">Delete</asp:HyperLink>
+                </td>
+            </tr>
+        </table>
+        <div style="text-align:center">
+        <footer > <@Copyright 2006 </footer></div>
+    </form>
+</body>
+</html>
